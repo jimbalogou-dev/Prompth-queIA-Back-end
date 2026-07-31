@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getPrompts, createPrompt, getPromptById, getCategories, getMyPrompts, } = require('../Controllers/promptController.js');
+const { getPrompts, createPrompt, getPromptById, getCategories, getMyPrompts, } = require('../Controllers/PromptController.js');
 const { protect } = require('../Middleware/authMiddleware.js');
 
 router.get('/user/me', protect, getMyPrompts)
