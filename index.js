@@ -19,10 +19,17 @@ connectDB();
 
 const app = express();
  app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://prompth-que-ia-front-end-24ls.vercel.app/'
-  ],
+  origin: function(origin, callback) {
+    const allowed = [
+      'http://localhost:5173',
+      'https://prompth-que-ia-front-end-24ls.vercel.app'
+    ];
+    if (!origin || allowed.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }))
 app.use(express.json());
