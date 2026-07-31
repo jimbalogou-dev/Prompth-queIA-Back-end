@@ -21,7 +21,7 @@ const app = express();
  app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://prompth-que-ia-front-end-24ls.vercel.app'
+    'https://prompth-que-ia-front-end-24ls.vercel.app/'
   ],
   credentials: true
 }))
