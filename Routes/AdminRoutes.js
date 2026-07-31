@@ -6,7 +6,7 @@ const {
   getAllPrompts,
   deletePrompt,
   getMessages
-} = require('../Controllers/adminController.js');
+} = require('../Controllers/AdminController.js');
 const { protect, adminOnly } = require('../Middleware/authMiddleware.js');
 
 const router = express.Router();
