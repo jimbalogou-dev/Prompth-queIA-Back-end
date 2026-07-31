@@ -1,5 +1,5 @@
 const express = require('express');
-const { getStats, getTopContributors, postDiscussion, getDiscussions } = require('../Controllers/communityController.js');
+const { getStats, getTopContributors, postDiscussion, getDiscussions } = require('../Controllers/CommunityController.js');
 
 const router = express.Router();
 
