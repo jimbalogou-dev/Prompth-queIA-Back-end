@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
-const { updateAvatar, updateProfile, getStats } = require('../Controllers/profileController.js');
+const { updateAvatar, updateProfile, getStats } = require('../Controllers/ProfileController.js');
 const { protect } = require('../Middleware/authMiddleware.js');
 
 const storage = multer.diskStorage({

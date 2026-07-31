@@ -5,7 +5,7 @@ const {
   addToCollection,
   removeFromCollection,
   getCollectionItems
-} = require('../Controllers/collectionController.js');
+} = require('../Controllers/CollectionController.js');
 const { protect } = require('../Middleware/authMiddleware.js');
 
 const router = express.Router();
